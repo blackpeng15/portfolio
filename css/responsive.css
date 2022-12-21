@@ -1,0 +1,15 @@
+
+/*********************
+***** INTRO 커튼 *****
+**********************/
+@media (max-width: 1024px) {
+    #cover {
+        width: 280%;
+        left: -32%;
+    }
+}
+@media (max-width: 712px) {
+    #cover {
+        left: -65%;
+    }
+}

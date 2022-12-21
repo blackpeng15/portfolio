@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.font {
+  font-family: 'Rajdhani', 'NanumSquareNeo-Variable';
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* overflow-x: hidden; */
+  background-color: #212022;
+	/* scroll-behavior: smooth; */
+}
+body {
+  margin: 0;
+}
+img {
+  vertical-align:bottom;
+  max-width:100%;
+  width: 100%;
+}
+h1,h2,p {
+  margin: 0;
+}
+
+
+/**************************
+****** 커튼 CSS 영역 ******
+***************************/
+#cover {
+	background:#fff;
+	z-index:9999999;
+	position:fixed;
+	top:0%;
+	left:-25%;
+	width:150%;
+	height:100%;
+	transform-origin:left;
+}
+#cover.cover-left {
+	animation: coverleft 2000ms both cubic-bezier(0.77,0,0.175,1);
+}
+@keyframes coverleft {
+	0% {
+		transform:scaleX(1) skewX(30deg);
+		transform-origin:left;
+	}
+	100% {
+		transform:scaleX(0) skewX(30deg);
+		transform-origin:left;
+	}
+}
+#cover.cover-right {
+	animation: coverright 2000ms both cubic-bezier(0.77,0,0.175,1);
+}
+@keyframes coverright {
+	0% {
+		transform:scaleX(0) skewX(20deg);
+		transform-origin:left;
+	}
+	100% {
+		transform:scaleX(1) skewX(20deg);
+		transform-origin:left;
+	}
+}
+
+/********************
+***** MAIN 영역 *****
+*********************/
+#main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#main::after {
+	content:'';
+	position:absolute;
+	z-index:800;
+	height:180%;
+	left:-40%;
+	top:-40%;
+	width:180%;
+	pointer-events:none;
+	will-change:transform;
+	transition:opacity 0.6s ease-out;
+	animation:noiseAnimation 1s steps(4) infinite;
+	background-image: url('../img/noise.png');
+}
+#main .section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #f9f9f9;
+  /* background-color: #000; */
+  background: url(../img/noise-background.jpg) left top / 100% 100% no-repeat;
+}
+#main .section.section2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background: none;
+  background-color: #fff;
+}
+#main .section.section3 {
+  height: 100%;
+}
+@keyframes noiseAnimation {
+	0% {
+		transform: translate(0, 0)
+	}
+	10% {
+		transform: translate(-5%, -5%)
+	}
+	20% {
+		transform: translate(-10%, 5%)
+	}
+	30% {
+		transform: translate(5%, -10%)
+	}
+	40% {
+		transform: translate(-5%, 15%)
+	}
+	50% {
+		transform: translate(-10%, 5%)
+	}
+	60% {
+		transform: translate(15%, 0)
+	}
+	70% {
+		transform: translate(0, 10%)
+	}
+	80% {
+		transform: translate(-15%, 0)
+	}
+	90% {
+		transform: translate(10%, 5%)
+	}
+	100% {
+		transform: translate(5%, 0)
+	}
+}
+
+ul.gnb li a::after {
+	content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+	display: block;
+  width: 0px;
+  height: 5px;
+	border-top: 1px solid #fff;
+  transition: all linear 0.2s;
+}
+ul.gnb li:hover a::after {
+  width: 100%;
+}
