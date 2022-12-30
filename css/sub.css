@@ -462,13 +462,22 @@ section.section4 {
 .box_wrap.s4.mgl {
   margin-left: -50px;
 }
+.box_wrap.s4 h3.title {
+  font-size: 28px;
+  padding-bottom: 0;
+}
 .box_wrap.s4 .info_box {
   margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.box_wrap.s4 .info_box .en_font {
+  font-size: 18px;
 }
 
 .next_arrow_wrap {
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   position: relative;
   flex-basis: 100%;
   bottom: 0px;
@@ -518,6 +527,12 @@ section.section4 {
   border-right: 1px solid #fff;
   transform: rotate(45deg);
 }
+
+
+
+/*********************************/
+/** P R O J E C T 영역 CSS 시작 **/
+/*********************************/
 
 
 

@@ -16,7 +16,7 @@
         setTimeout(() => {
           window.location.href =
             "" + dataName + ".html";
-        }, 2000);
+        }, 1200);
       });
     });
   }
