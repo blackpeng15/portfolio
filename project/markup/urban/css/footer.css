@@ -1,0 +1,149 @@
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer div.inner {
+    position: relative;
+    padding-top: 90px;
+    height: 430px;
+}
+
+footer div.inner::after {
+    content: '';
+    position: absolute;
+    bottom: 150px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+}
+
+footer div.inner .arrow-btn {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: #111;
+    transition: all 1s;
+}
+
+footer div.inner .arrow-btn:hover {
+    background-color: #444;
+}
+
+footer div.inner .arrow-btn::before {
+    content:'';
+    display: block;
+    background-image: url(../images/arrow-btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+}
+
+footer div.inner h1 {
+    
+}
+
+footer div.inner .left {
+  
+}
+
+footer div.inner .left .tel {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+footer div.inner .left .tel p.phone {
+    
+}
+
+footer div.inner .left .tel p.phone strong {
+    font-size: 36px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer div.inner .left .tel p {
+    margin-top: 0px;
+}
+
+footer div.inner .left address {
+    margin-top: 35px;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer div.inner .left ul.bnb {
+    margin-top: 100px;
+    font-size: 13px;
+    gap: 30px;
+}
+
+footer div.inner .left ul.bnb li {
+    
+}
+
+footer div.inner .left ul.bnb li a {
+    color: #aaa;
+}
+
+footer div.inner .left ul.bnb li:nth-child(1) a {
+    color: #fff;
+}
+
+footer div.inner div.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div.inner div.right ul.sns {
+    display: flex;
+    gap: 40px;
+}
+
+footer div.inner div.right ul.sns li {
+    
+}
+
+footer div.inner div.right ul.sns li a {
+    color: #fff;
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer div.inner div.right ul.sns li:nth-child(1) a {
+    background-image: url(../images/f.svg);
+}
+
+footer div.inner div.right ul.sns li:nth-child(2) a {
+    background-image: url(../images/i.svg);
+}
+
+footer div.inner div.right ul.sns li:nth-child(3) a {
+    background-image: url(../images/i.svg);
+}
+
+footer div.inner div.right a.email {
+    position: absolute;
+    bottom: 83px;
+    right: 0;
+    color: #aaa;
+    font-size: 13px;
+}
+

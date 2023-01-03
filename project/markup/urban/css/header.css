@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-left: 25px;
+  padding-right: 35px;
+  box-sizing: border-box;
+}
+header a{
+  color: white;
+  
+}
+
+header.active {
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+header.active .inner {
+  height: 50px;
+}
+
+header .inner {
+  padding: 50px;
+  padding-top: 30px;
+  height: 100px;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: 700;
+  width: 95%;
+}
+header .inner h1 {
+  position: absolute;
+  left: calc(50% - 130px);
+  text-align: center;
+  order: 2; 
+  
+/* gbst   */
+  font-size: 30px;
+  font-weight: 700;
+}
+
+header .inner .gnbWrap{
+
+}
+
+header .inner .gnbWrap a.ham{
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  box-sizing: border-box;
+  align-items: center;
+
+}
+
+header .inner .gnbWrap a.ham::before{
+  content: "";
+  height: 4px;
+  background-color: white ;
+  display: block;
+  width : 100%;
+  
+}
+
+
+header .inner h1 a {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-family: 'NotoSansKR', sans-serif;
+}
+
+header .inner h1 a img{
+  display: block;
+  transform:translateY(-10px);
+  filter:brightness(100);
+}
+
+header .inner ul.gnb {
+  
+}
+header .inner ul.gnb li {
+  
+}
+header .inner ul.gnb li h2 {
+  
+}
+header .inner ul.gnb li h2 a {
+  
+}
+header .inner ul.gnb li ul.gnbsub {
+  
+}
+header .inner ul.gnb li ul.gnbsub li {
+  
+}
+header .inner ul.gnb li ul.gnbsub li a {
+  
+}
+header .inner ul.enb {
+  order:3;
+  gap: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  
+  
+}
+header .inner ul.enb li {
+  
+}
+header .inner ul.enb li a {
+  color:black;
+  font-size: 16px;
+  font-weight: bold;
+}

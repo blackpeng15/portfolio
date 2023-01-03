@@ -1,0 +1,258 @@
+#title {
+  height: 930px;
+  background-color: #eee;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#title::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 76.7%;
+  height: 100%;
+  background-color: #111;
+}
+
+#title .wtitle_slide {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#title .title_slide {
+  height: 100%;
+}
+
+#title .slick-prev {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  left: 85%;
+  top: unset;
+  bottom: 0;
+}
+
+#title .slick-prev::before {
+  font-size: 50px;
+}
+
+#title .slick-next {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  right: 5%;
+  top: unset;
+  bottom: 0;
+}
+
+#title .slick-next::before {
+  font-size: 50px;
+}
+
+#title .inner {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 695px;
+}
+
+#title .inner h2{
+  position: relative;
+  z-index: 1;
+  font-size: 65px;
+  margin-top: 250px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#title .inner h2 span{
+  display: block;
+/*   animation-name: h2up; */
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes h2up{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0.4;
+  }
+}
+
+.h2up {
+  animation-name: h2up;
+}
+
+#title .inner p{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#title .inner p span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 34px;
+  letter-spacing: -1px;
+  display: block;
+/*   animation-name: pup; */
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+
+@keyframes pup{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(100%);
+     opacity: 0;
+  }
+}
+
+.pup {
+  animation-name: pup;
+}
+
+#title .inner br{
+
+}
+
+#title .inner iframe, #title .inner img {
+  width: 1225px;
+  height: 697px;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+}
+
+#title span.titleaside{
+  position: absolute;
+  right: calc(20% / 4 - 82px);
+  bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 440px;
+  justify-content: space-between;
+  width: 164px;
+}
+
+#title .titleaside a.campaign{
+  transform: rotate(90deg) translateX(78px);
+  color: #aaa;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#title span.titleaside a.scroll{
+  font-size:12px; 
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  animation-name: textcolor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textcolor{
+  0%{
+   color:black;
+  }
+  15%{
+   color:yellowgreen;
+  }
+  30%{
+   color:black;
+  }
+  100%{
+    color:black;
+  }
+}
+
+#title span.titleaside a.scroll::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: -17px;
+  border: 3px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform:scale(0.5) translateY(-15px) rotate(45deg);
+  color: #000;
+  left: calc(50% - 10.5px);
+  animation-name: scrollani1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollani1{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+   20%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+#title span.titleaside a.scroll::after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: -27px;
+  border: 3px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform:scale(0.5) translateY(-15px) rotate(45deg);
+  color: #333;
+  left: calc(50% - 10.5px);
+  animation-name: scrollani2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollani2{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+

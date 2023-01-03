@@ -1,0 +1,839 @@
+/* SERVICE 영역 CSS */
+main section#service {
+    
+}
+
+main section#service div.inner {
+    position: relative;
+    padding-bottom: 520px;
+}
+
+main section#service div.inner hgroup {
+    
+}
+
+main section#service div.inner hgroup h2.h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #aaa;
+}
+
+main section#service div.inner hgroup h3.h2 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 60px;
+}
+
+main section#service div.inner div.contents {
+    flex-wrap: wrap;
+    row-gap: 160px;
+    column-gap: 50px;
+    margin-top: 50px;
+    
+}
+
+main section#service div.inner div.contents article {
+    width: calc(100% / 3 - 100px / 3);
+}
+
+main section#service div.inner div.contents article:nth-child(3n+1) {
+    transform: translateY(20%);
+}
+
+main section#service div.inner div.contents article:nth-child(3n+2) {
+    transform: translateY(40%);
+}
+
+main section#service div.inner div.contents article a {
+    
+}
+
+main section#service div.inner div.contents article a::before {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 595px;
+    background-image: url(../images/main-service-01.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    border: 0 solid #636a52;
+    background-origin: border-box;
+}
+
+main section#service div.inner div.contents article a:hover::before {
+    border: 40px solid #636a52;
+}
+
+main section#service div.inner div.contents article:nth-child(2) a:before {
+    background-image: url(../images/main-service-02.jpg);
+}
+
+main section#service div.inner div.contents article:nth-child(3) a:before {
+    background-image: url(../images/main-service-03.jpg);
+}
+
+main section#service div.inner div.contents article:nth-child(4) a:before {
+    background-image: url(../images/main-service-04.jpg);
+}
+
+main section#service div.inner div.contents article:nth-child(5) a:before {
+    background-image: url(../images/main-service-05.jpg);
+}
+
+main section#service div.inner div.contents article:nth-child(6) a:before {
+    background-image: url(../images/main-service-06.jpg);
+}
+
+main section#service div.inner div.contents article a h4.h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 24px;
+    line-height: 1.3;
+}
+
+main section#service div.inner div.contents article a p.p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 12px;
+    line-height: 1.3;
+    font-family: 'NotoSansKR', sans-serif;
+}
+
+main section#service div.inner div.contents a.more {
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 50px);
+    width: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main section#service div.inner div.contents a.more::before {
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+main section#service .inner a.more span.pentagon {
+    width: 34px;
+    height: 32px;
+    background-image: url(../images/pentagon-2.svg);
+    background-size: cover;
+    position: absolute;
+    right: -65px;
+    top: calc(50% - 20px);
+    opacity: 0;
+}
+
+main section#service .inner a.more:hover span.pentagon {
+    animation-name: moreRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 40% 55%;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+@keyframes moreRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+    85% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+main section#service div.inner div.contents a.more::after {
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-bottom: transparent;
+    border-left: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: -40%;
+}
+
+
+
+/* SPACE 영역 CSS */
+#space{
+    position: relative;
+    padding: 280px 0 100px;
+}
+#space .inner{
+    margin-left: 0;
+    width: 90%;
+    padding-left: 16%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    height: 850px;
+    background-image: url(../images/main-space.jpg);
+    background-size: cover;
+}
+#space .inner h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-top: 150px;
+}
+
+#space .inner h2.active {
+    left: 300px;
+    color: red;
+}
+
+#space .inner>*:not(h2){
+    color: #fff;
+}
+#space .inner p{
+    line-height: 1.2;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#space .inner a.more{
+    position: absolute;
+    bottom: 320px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#space .inner a.more::before{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110%;
+    z-index: 1;
+}
+
+#space .inner a.more span.pentagon {
+    width: 34px;
+    height: 32px;
+    background-image: url(../images/pentagon-2.svg);
+    background-size: cover;
+    position: absolute;
+    right: -65px;
+    top: calc(50% - 20px);
+    opacity: 0;
+}
+
+#space .inner a.more:hover span.pentagon {
+    animation-name: moreRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 40% 55%;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+@keyframes moreRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+    85% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#space .inner a.more::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-bottom: transparent;
+    border-left: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: -54%;
+}
+
+
+
+/* STORY 영역 CSS */
+#story {
+
+}
+
+#story .inner {
+    margin-top: 80px;
+}
+
+#story .inner hgroup {
+
+}
+
+#story .inner hgroup h2.h5 {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+#story .inner hgroup h3.h2 {
+    font-weight: bold;
+    font-size: 54px;
+    padding-bottom: 40px;
+}
+
+#story .inner hgroup h4.h4 {
+    color: #333;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 16px;
+    line-height: 36px;
+}
+
+#story .inner ul {
+    width: 100%;
+    margin-top: 130px;
+}
+
+#story .inner ul li {
+/*     width: 33.33%; */
+    flex-grow: 1;
+}
+
+#story .inner ul li:before {
+    content:'';
+    display: block;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#story .inner ul li:nth-child(1)::before {
+    background-image: url(../images/story1.svg);
+}
+
+#story .inner ul li:nth-child(2)::before {
+    background-image: url(../images/story2.svg);
+}
+
+#story .inner ul li:nth-child(3)::before {
+    background-image: url(../images/story3.svg);
+}
+
+#story .inner ul li:nth-child(2) {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#story .inner ul li h5.h5 {
+    color: #111;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 46px;
+    padding-bottom: 26px;
+}
+
+#story .inner ul li p.p {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding-bottom: 16px;
+}
+
+#story .inner a.more {
+    position: relative;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+#story .inner a.more::before{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110%;
+    z-index: 1;
+}
+
+#story .inner a.more span.pentagon {
+    width: 34px;
+    height: 32px;
+    background-image: url(../images/pentagon-2.svg);
+    background-size: cover;
+    position: absolute;
+    right: -65px;
+    top: calc(50% - 20px);
+    opacity: 0;
+}
+
+#story .inner a.more:hover span.pentagon {
+    animation-name: moreRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 40% 55%;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+@keyframes moreRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+    85% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#story .inner a.more::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-bottom: transparent;
+    border-left: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: -54%;
+}
+
+
+/* MIELE 영역 CSS */
+#miele {
+    margin-top: 120px;
+    position: relative;
+}
+
+#miele::after {
+    content:'';
+    width: 35%;
+    height: 170px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #767c69;
+    z-index: -1;
+}
+
+#miele .inner {
+    background-image: url(../images/main-miele-01.jpg);
+    height: 850px;
+    background-size: cover;
+    margin-left: 0;
+    width: 90%;
+    padding-left: 16%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#miele .inner h2.h2, #contact .inner h2.h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 300px;
+}
+
+#miele .inner h2.h2 small.h5, #contact .inner h2.h2 small.h5 {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+#miele .inner p.p {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#miele .inner a.more {
+    position: absolute;
+    bottom: 270px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+#miele .inner a.more::before{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110%;
+    z-index: 1;
+}
+
+#miele .inner a.more span.pentagon {
+    width: 34px;
+    height: 32px;
+    background-image: url(../images/pentagon-2.svg);
+    background-size: cover;
+    position: absolute;
+    right: -65px;
+    top: calc(50% - 20px);
+    opacity: 0;
+}
+
+#miele .inner a.more:hover span.pentagon {
+    animation-name: moreRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 40% 55%;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+@keyframes moreRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+    85% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#miele .inner a.more::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-bottom: transparent;
+    border-left: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: -54%;
+}
+
+
+
+/* CONTACT 영역 CSS */
+#contact {
+    position: relative;
+    height: 1000px;
+}
+
+#contact::after {
+    content:'';
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #767c69;
+    z-index: -1;
+}
+
+#contact .inner {
+    background-size: cover;
+    width: 90%;
+    padding-left: 16%;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+#contact .inner::after {
+    content: '';
+    position: absolute;
+    top: 170px;
+    right: 250px;
+    background-image: url(../images/main-register-01.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 650px;
+}
+
+#contact .inner a.more {
+    position: absolute;
+    bottom: 230px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    
+}
+
+#contact .inner a.more::before{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110%;
+    z-index: 1;
+}
+
+#contact .inner a.more span.pentagon {
+    width: 34px;
+    height: 32px;
+    background-image: url(../images/pentagon-2.svg);
+    background-size: cover;
+    position: absolute;
+    right: -65px;
+    top: calc(50% - 20px);
+    opacity: 0;
+}
+
+#contact .inner a.more:hover span.pentagon {
+    animation-name: moreRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 40% 55%;
+    animation-timing-function: linear;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+@keyframes moreRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        
+    }
+    85% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#contact .inner a.more::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-bottom: transparent;
+    border-left: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: -54%;
+}
+
+#contact .inner p.p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #777;
+    margin-top: 18px;
+}
+
+
+
+/* INSTAGRAM 영역 CSS */
+#instagram {
+    background-color: #222;
+}
+
+#instagram .inner {
+    row-gap: 50px;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    padding-left: 16%;
+    width: 90%;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+#instagram .inner h2.h2 {
+    color: #fff;
+    text-indent: -3px;
+    font-size: 50px;
+}
+
+#instagram .inner ul.contents {
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#instagram .inner ul.contents li {
+    flex-basis: calc(100% / 4 - 120px / 4);
+}
+
+#instagram .inner ul.contents li a {
+    position: relative;
+    display: block;
+}
+
+#instagram .inner ul.contents li a:hover::before {
+    opacity: 1;
+}
+
+#instagram .inner ul.contents li a::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#instagram .inner ul.contents li a::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url(../images/insta-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: block;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#instagram .inner ul.contents li:hover a::after {
+    opacity: 1;
+}
+
+#instagram .inner ul.contents li a figure {
+
+}
+
+#instagram .inner ul.contents li a figure img {
+    display: block;
+}
+
+#instagram .inner ul.contents li a p.p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    color: #fff;
+    display: block;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#instagram .inner ul.contents li a:hover p.p {
+    opacity: 1;
+}
+
+
+aside {
+    position: sticky;
+    bottom: 40px;
+    z-index: 1;
+}
+
+aside ul {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+aside ul a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+aside ul a.shop {
+    background-color: #000;
+    color: #fff;
+}
+
+aside ul a.kakao {
+    background-color: #fbcc34;
+    color: #000;
+}
+

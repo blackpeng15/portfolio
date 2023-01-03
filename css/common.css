@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @font-face {
   font-family: 'NanumSquareNeo-Variable';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
@@ -6,6 +7,12 @@
   font-style: normal;
 }
 .font {
+  font-family: 'Rajdhani', 'NanumSquareNeo-Variable';
+}
+.font2 {
+	font-family: 'Montserrat', 'NanumSquareNeo-Variable';
+}
+.font3 {
   font-family: 'Rajdhani', 'NanumSquareNeo-Variable';
 }
 
@@ -19,6 +26,11 @@ html, body {
 }
 body {
   margin: 0;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
 }
 img {
   vertical-align:bottom;
@@ -161,4 +173,8 @@ ul.gnb li a::after {
 }
 ul.gnb li:hover a::after {
   width: 100%;
+}
+
+.en_font {
+  font-size: 18px;
 }

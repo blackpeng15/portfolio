@@ -1,0 +1,195 @@
+
+
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#header .inner .logo_container {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    height: 60px;
+    width: 10%;
+    padding-left: 37px;
+}
+
+#header .inner .logo_container img { 
+    width: 100%;
+    height: 20px;
+}
+
+#header .inner .gnb_container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#header .inner .gnb_container .gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    gap: 10px;
+    padding-left: 230px;
+}
+
+#header .inner .gnb_container .gnb li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#header .inner .gnb_container .gnb li.lang_kr {
+    margin-left: 50px;
+}
+
+#header .inner .gnb_container .gnb li.lang_kr::after {
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: rgb(195, 189, 189);
+    margin-left: 10px;
+}
+
+#header .inner .gnb_container .gnb li a {
+    display: block;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+#header .inner .gnb_container .gnb li a:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+#header .inner .gnb_container .gnb li.lang_en a {
+    color: #999;
+}
+
+#header .inner .gnb_container .ham {
+    display: none;
+}
+
+
+
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* input 중에 id가 trigger인 항목에 대한 css */
+input[id=trigger] {
+    display: none;
+}
+
+/* label 중에 for가 trigger인 항목 */
+label[for=trigger] {
+    /* border: 1px solid red; */
+    width: 30px;
+    height: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* label 중에 for가 trigger인 항목 안의 span */
+label[for=trigger] span {
+    display: block;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 1000; 
+}
+
+/* label[for=trigger] > span의 n번째 요소 */
+label[for=trigger] span:nth-child(1) {
+    top:0;
+}
+
+label[for=trigger] span:nth-child(2) {
+    top:50%;
+}
+
+label[for=trigger] span:nth-child(3) {
+    top:100%;
+}
+
+/* check시 변하는 label[for=trigger] > span의 n번째 요소  */
+input[id=trigger]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+input[id=trigger]:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id=trigger]:checked + label span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+
+/* 사이드바 */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -250px;
+    transition: 0.3s;
+}
+
+.sidebar .gnb_sub {
+    position: absolute;
+    top: 100px;
+    right: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar .gnb_sub li a {
+    color: #fff;
+}
+
+/* input[id=trigger]가 체크되었을 때 사이드바가 나오는 형제 인접자 */
+input[id=trigger]:checked ~ .sidebar {
+    right: 0;
+}
+
+/* check시 같이 밀려나가는 CSS 햄버거 메뉴 */
+input[id=trigger]:checked + label[for=trigger] {
+    right: 0px;
+    transition: 0.3s;
+}
