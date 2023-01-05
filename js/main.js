@@ -130,10 +130,8 @@ window.addEventListener('scroll', scrollInProgress);
 
 
 // 어바웃 마우스 애로우 클릭 시 이동
-$(document).ready(function(){
-  $(".mouse_arrow").click(function(){
-    $("html ").animate({scrollTop:$("#about_section2").offset().top},1000);
-  });
+$(".mouse_arrow").click(function(){
+  $("html ").animate({scrollTop:$("#about_section2").offset().top},1000);
 });
 
 
@@ -185,3 +183,30 @@ $(document).ready(function(){
 //     lastScrollTop = scrollTop;
 // });
 
+
+// 프로젝트 영역 클릭 시 on 클래스 부여
+$('.next_arrow_wrap2').click(function(){
+  $('.chil_wrap').removeClass('on');
+  $(this).parent().addClass('on');
+  $(this).parent().siblings().hide();
+  // $(this).prev().hide();
+  $('.back_arrow_wrap .back_arrow').show();
+  $('.slide_container').show();
+});
+
+$('.back_arrow_wrap .back_arrow').click(function(){
+  $('.chil_wrap').removeClass('on');
+  $('.chil_wrap').show();
+  $('.middle_line').show();
+  $('.back_arrow_wrap .back_arrow').hide();
+  $('.slide_container').hide();
+});
+
+
+// 프로젝트 슬라이드 영역
+let swiper = new Swiper(".mySwiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+});

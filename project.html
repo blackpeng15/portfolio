@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="./css/responsive.css"/>
     <!-- // 스타일 관련 CSS -->
 
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- // AOS CDN -->
+
     <!-- 스와이퍼 CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -60,7 +65,150 @@
       </nav>
       <div class="project_container">
         <section id="section1" class="section section1">
-          프로젝트 페이지당!
+          <div class="double_wrap" data-aos="fade-top" data-aos-duration="1000" data-aos-delay="1200">
+            <div class="left_wrap chil_wrap">
+              <h3>MarkUp <br/> Project</h3>
+              <p class="font">
+                <span class="en_font">HTML5 + CSS3</span>를 기반으로 마크업을 하고 버튼 클릭이나
+                스크롤 탑 등 간단한 동적 요소를 제이쿼리, <span class="en_font">JS</span>를 사용하여
+                제작한 퍼블리싱 위주의 웹 프로젝트
+              </p>
+              <div class="next_arrow_wrap2">
+                <a href="javascript:;" class="next_arrow2 font">
+                  <p>view To MarkUp</p>
+                  <span></span>
+                </a>
+              </div>
+              <div class="back_arrow_wrap">
+                <a href="javascript:;" class="back_arrow font">
+                  <p>Back To Project</p>
+                  <span></span>
+                </a>
+              </div>
+              <div class="slide_container swiper mySwiper">
+                <div class="slide_wrap swiper-wrapper">
+                  <div class="slide swiper-slide toss">
+                    <div class="left_area">
+                      <img src="./project/markup/toss/mokup_toss_pc.png" alt="">
+                    </div>
+                    <div class="right_area">
+                      <ul class="color_wrap toss">
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#0064FF</p>
+                        </li>
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#E4E9F4</p>
+                        </li>
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#FFFFF</p>
+                        </li>
+                      </ul>
+                      <span class="line_span"></span>
+                      <h2 class="font2">Toss</h2>
+                      <p class="project_info font3">
+                        <span class="en_font">HTML, CSS </span>그리고 <span class="en_font">AOS CDN</span>을 이용하여 스크립트 없이
+                        마크업과 스타일만으로 제작한 토스 메인페이지 입니다.
+                      </p>
+                      <a class="btn_view_more" href="./project/markup/toss/index.html" target="_blank">
+                        <span class="font">MoreView</span>
+                      </a>
+                      <div class="tag_wrap">
+                        <div class="type_tag font"><span>#PC</span></div>
+                        <div class="type_tag font"><span>#HTML</span></div>
+                        <div class="type_tag font"><span>#CSS</span></div>
+                      </div>
+                      <div class="icon_swipe_hand">
+                        <img src="./img/icon_swipe_hand.png" alt="">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="left_area">
+                      <img src="./project/markup/urban/mokup_urban_set1.jpg" alt="">
+                    </div>
+                    <div class="right_area">
+                      <ul class="color_wrap urban">
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#EEEEEE</p>
+                        </li>
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#000000</p>
+                        </li>
+                        <li>
+                          <div class="color_box"></div>
+                          <p>#FFFFFF</p>
+                        </li>
+                      </ul>
+                      <span class="line_span"></span>
+                      <h2 class="font2 long_txt">Urban <br/> Launderette</h2>
+                      <p class="project_info font3">
+                        <span class="en_font">javascript</span>와 <span class="en_font">Swiper CDN</span>을 사용하였으며, <br/>
+                        PC(적응형) 구현 후 Mobile(반응형)까지 함께 구현하였습니다.
+                      </p>
+                      <a class="btn_view_more" href="./project/markup/urban/index.html" target="_blank">
+                        <span class="font">MoreView</span>
+                      </a>
+                      <div class="tag_wrap">
+                        <div class="type_tag font"><span>#PC</span></div>
+                        <div class="type_tag font"><span>#MOBILE</span></div>
+                        <div class="type_tag font"><span>#JS</span></div>
+                      </div>
+                      <div class="icon_swipe_hand">
+                        <img src="./img/icon_swipe_hand.png" alt="">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="left_area"></div>
+                    <div class="right_area"></div>
+                  </div>
+                </div>
+                <div class="scrollbar swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="right_wrap chil_wrap">
+              <h3>Script <br/> Project</h3>
+              <p class="font">
+                <span class="en_font">REACT</span>를 사용하여 각각의 <span class="en_font">DOM</span> 객체들, 
+                화면구성을 담당하는 영역들을 <span class="en_font">Component</span>화 하고 리액트 최신 문법인 <span class="en_font">Hook</span>을 사용하여
+                제작한 <span class="en_font">SPA</span>구조의 프로젝트
+              </p>
+              <div class="next_arrow_wrap2">
+                <a href="javascript:;" class="next_arrow2 font">
+                  <p>view To Script</p>
+                  <span></span>
+                </a>
+              </div>
+              <div class="back_arrow_wrap">
+                <a href="javascript:;" class="back_arrow font">
+                  <p>Back To Project</p>
+                  <span></span>
+                </a>
+              </div>
+              <div class="slide_container swiper mySwiper">
+                <div class="slide_wrap swiper-wrapper">
+                  <div class="slide swiper-slide">
+                    <img src="./img/slide_test1.jpg" alt="">
+                  </div>
+                  <div class="slide swiper-slide">
+                    <img src="./img/slide_test2.jpg" alt="">
+                  </div>
+                  <div class="slide swiper-slide">
+                    <img src="./img/slide_test3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <span class="middle_line"></span>
+          </div>
         </section>
       </div>
     </main>
